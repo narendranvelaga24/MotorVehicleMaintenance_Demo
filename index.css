@@ -85,3 +85,23 @@ nav ul li a:hover {
 .btn:hover {
     background-color: #e6b800;
 }
+
+#contact {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    margin-top: 20px;
+    border-top: 2px solid #ddd;
+}
+
+#contact h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+#contact p {
+    font-size: 18px;
+    color: #333;
+    margin: 5px 0;
+}
