@@ -17,10 +17,13 @@ document.getElementById('newsletter-form').addEventListener('submit', function (
 // Smooth Scrolling for Navigation Links
 document.querySelectorAll('nav ul li a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        e.preventDefault();
         const targetId = this.getAttribute('href');
-        document.querySelector(targetId).scrollIntoView({
-            behavior: 'smooth'
-        });
+
+        if (targetId.startsWith("#")) { // Only prevent default for internal links
+            e.preventDefault();
+            document.querySelector(targetId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
     });
 });
