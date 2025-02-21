@@ -5,20 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking Confirmation</title>
-    <link rel="stylesheet" href="css/confirmation.css">
+    <link rel="stylesheet" href="/assets/css/confirmation.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <div class="logo">Service Booking</div>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="booking.html">Book a Service</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <section id="confirmation">
         <h2>Booking Confirmation</h2>
         <p>Your booking has been confirmed! Here are the details:</p>
-        <ul>
-            <li><strong>Service:</strong> Selected Service</li>
-            <li><strong>Date:</strong> Chosen Date</li>
-            <li><strong>Time:</strong> Chosen Time</li>
-            <li><strong>Payment Method:</strong> Cash on Delivery</li>
+        <ul id="booking-details">
+            <!-- Booking details will be dynamically populated using JavaScript -->
         </ul>
         <button onclick="window.print()">Print Confirmation</button>
         <a href="/index.html" class="home-button">Home</a>
     </section>
+
+    <footer>
+        <p>&copy; 2023 Service Booking. All rights reserved.</p>
+    </footer>
+
+    <script src="/assets/js/confirmation.js"></script>
 </body>
 </html>

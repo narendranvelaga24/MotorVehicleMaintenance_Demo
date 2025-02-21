@@ -81,7 +81,7 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     height: 60vh;
-    background: url('hero-image.jpg') no-repeat center center/cover;
+    background: url('/assets/images/pexels-pixabay-65623.jpg') no-repeat center center/cover;
     text-align: center;
     color: white;
     padding: 20px;
@@ -119,19 +119,53 @@ nav ul li a:hover {
     background-color: #e6b800;
 }
 
-/* Responsive Hero Section */
+/* Features Section */
+#features {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#features h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Responsive Features Section */
 @media (max-width: 768px) {
-    #hero {
-        height: 50vh;
-    }
-    .hero-content {
-        padding: 15px;
-    }
-    .hero-content h1 {
-        font-size: 28px;
-    }
-    .hero-content p {
-        font-size: 16px;
+    .feature-card {
+        width: 100%;
+        margin: 10px 0;
     }
 }
 
@@ -156,6 +190,50 @@ footer {
     margin: 5px 0;
 }
 
+#newsletter {
+    margin-top: 20px;
+}
+
+#newsletter h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#newsletter-form input {
+    padding: 10px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#newsletter-form button {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#newsletter-form button:hover {
+    background-color: #e6b800;
+}
+
+#newsletter-message {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ffcc00;
+}
+
 /* Responsive Footer */
 @media (max-width: 768px) {
     footer {
@@ -167,5 +245,11 @@ footer {
     #contact p {
         font-size: 14px;
     }
+    #newsletter-form {
+        flex-direction: column;
+    }
+    #newsletter-form input {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
 }
-
