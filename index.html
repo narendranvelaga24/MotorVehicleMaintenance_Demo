@@ -1,11 +1,10 @@
-<!-- Homepage -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
-    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/index.css"> <!-- Corrected path -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
@@ -33,19 +32,20 @@
     <section id="features">
         <h2>Why Choose Us?</h2>
         <div class="feature-container">
-            <div class="feature-card" style="background-image: url('assets/images/support-bg.jpg');">
+            <!-- It's better to define background images in CSS for maintainability -->
+            <div class="feature-card feature-card-support"> 
                 <div class="feature-overlay">
                     <h3>24/7 Support</h3>
                     <p>We provide round-the-clock support for all your vehicle maintenance needs.</p>
                 </div>
             </div>
-            <div class="feature-card" style="background-image: url('assets/images/technician-bg.jpg');">
+            <div class="feature-card feature-card-technician">
                 <div class="feature-overlay">
                     <h3>Expert Technicians</h3>
                     <p>Our certified technicians ensure your vehicle is in the best hands.</p>
                 </div>
             </div>
-            <div class="feature-card" style="background-image: url('assets/images/pricing-bg.jpg');">
+            <div class="feature-card feature-card-pricing">
                 <div class="feature-overlay">
                     <h3>Affordable Pricing</h3>
                     <p>Get top-notch services at competitive prices.</p>
@@ -71,6 +71,6 @@
         </div>
     </footer>
 
-    <script src="assets/js/index.js"></script>
+    <script src="assets/js/index.js"></script> <!-- Corrected path -->
 </body>
 </html>

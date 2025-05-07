@@ -362,3 +362,26 @@ body.zoom-out {
     opacity: 0;
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
+
+/* ... other styles ... */
+
+#features .feature-card {
+    /* ... other styles ... */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Using the new classes for targeting */
+#features .feature-card-support {
+    background-image: url('../images/support-bg.jpg'); /* Corrected path */
+}
+
+#features .feature-card-technician {
+    background-image: url('../images/technician-bg.jpg'); /* Corrected path */
+}
+
+#features .feature-card-pricing {
+    background-image: url('../images/pricing-bg.jpg'); /* Corrected path */
+}
+
+/* ... other styles ... */
