@@ -22,20 +22,25 @@
         </ul>
     </nav>
 
+
     <main class="profile-container">
         <h2>Your Profile Information</h2>
         <div class="profile-info">
             <label for="username">Username:</label>
-            <p id="username">JohnDoe123</p>
+            <p id="username" contenteditable="false">JohnDoe123</p>
 
             <label for="email">Email:</label>
-            <p id="email">johndoe@example.com</p>
+            <p id="email" contenteditable="false">johndoe@example.com</p>
 
             <label for="membership">Membership Status:</label>
-            <p id="membership">Premium Member</p>
+            <p id="membership" contenteditable="false">Premium Member</p>
 
             <label for="last-login">Last Login:</label>
             <p id="last-login">2023-10-27 10:30 AM</p>
+        </div>
+        <div class="profile-actions">
+            <button id="edit-btn">Edit</button>
+            <button id="save-btn" style="display: none;">Save</button>
         </div>
     </main>
 
