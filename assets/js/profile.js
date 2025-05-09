@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     editBtn.addEventListener("click", () => {
         editableFields.forEach(id => {
+            /* cspell:disable-next-line */
             document.getElementById(id).setAttribute("contenteditable", "true");
         });
         editBtn.style.display = "none";
@@ -13,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     saveBtn.addEventListener("click", () => {
         editableFields.forEach(id => {
+            /* cspell:disable-next-line */
             document.getElementById(id).setAttribute("contenteditable", "false");
         });
         saveBtn.style.display = "none";

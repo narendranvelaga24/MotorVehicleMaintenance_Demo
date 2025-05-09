@@ -25,6 +25,7 @@
     transition: background-color 0.3s ease;
 }
 
+/* cspell:disable-next-line */
 .profile-info p[contenteditable="true"] {
     background-color: #e7f3ff;
     border-color: #66afe9;
