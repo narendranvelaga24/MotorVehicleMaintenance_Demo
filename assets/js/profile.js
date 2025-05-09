@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const editBtn = document.getElementById("edit-btn");
     const saveBtn = document.getElementById("save-btn");
-    const editableFields = ["username", "email", "membership"];
+    const editableFields = ["name", "email", "membership"];
 
     editBtn.addEventListener("click", () => {
         editableFields.forEach(id => {
